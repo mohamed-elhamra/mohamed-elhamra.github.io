@@ -183,12 +183,14 @@ if we will run these two programs, the result will be the same for both implemen
 <img src="/assets/img/sample/implementation-container.PNG" alt="drawing" width="700" height="170"/>
 
 
-#### 4.BeanFactory vs ApplicationContext Container:
+#### 4. BeanFactory vs ApplicationContext Container:
 The **ApplicationContext** container is the superset of the **BeanFactory** container. It means that all functionality of the BeanFactory container is present in the ApplicationContext container. Therefore, ApplicationContext container is often preferred over BeanFactory container. BeanFactory is often used to build lightweight applications such as mobile devices, applet-based applications, etc. where data volume as well as speed is important. Below are the most commonly used ApplicationContext implementations.
 
 • **FileSystemXmlApplicationContext** – Here, we have to provide the full path of the XML bean configuration file to the constructor in order to load the metadata of the beans from an XML file.<br />
 • **ClassPathXmlApplicationContext** – Here, we need to set CLASSPATH of the bean configuration XML file in order to load the metadata of the beans from an XML file.<br />
 • **WebXmlApplicationContext** – Here, the container loads the XML file within a web application which has metadata of all beans.
+
+<img src="/assets/img/sample/metadata-container.PNG" alt="drawing" width="350" height="350"/>
 
 
 
