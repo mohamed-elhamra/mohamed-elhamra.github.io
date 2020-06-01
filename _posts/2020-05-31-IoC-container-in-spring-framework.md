@@ -33,13 +33,13 @@ Spring framework implements the inversion of control through different mechanism
 * Strategy design pattern
 * Factory pattern
 
-
 > I will talk about these mechanisms in future blogs
 
 # How did the IoC container work?
 
 The spring container doesn't know how to instantiate our object alone so to make that we need to specify a configuration metadata to our container, this configuration can be specified through the XML file, Java code, Java annotations, then the spring container uses our POJO class as well as the configuration, and he can create the beans.
 
-
 > **Bean**: an object that is instantiated and managed by the Spring IoC container
+
+<img src="drawing.jpg" alt="drawing" width="200"/>
 
