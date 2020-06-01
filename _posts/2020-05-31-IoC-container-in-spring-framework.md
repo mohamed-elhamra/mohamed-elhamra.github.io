@@ -53,6 +53,84 @@ This configuration metadata  is nothing but bean definition, as we mentioned abo
 
 * **XML file**
 
+```java
+package com.melhamra;
+
+public class MyClass {
+    
+    private String myField;
+
+    public String getMyField() {
+        return myField;
+    }
+
+    public void setMyField(String myField) {
+        this.myField = myField;
+    }
+}
+```
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="myClass" class="com.melhamra.MyClass">
+        <property name="myField" value="Hello World"></property>
+    </bean>
+</beans>
+```
+
+In the example above we tell the Spring container to create a Bean of the class HelloWorld and instantiate the field "message" with the value "Hello World"
+
+* **JAVA code**
+
+Same things we will do but now with the java-based configuration.
+
+```java
+package com.melhamra;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@ComponentScan("com.melhamra")
+public class Config {
+    @Bean("myClass")
+    public MyClass getMyClass(){
+        MyClass myClass = new MyClass();
+        myClass.setMyField("Hello World");
+        return myClass;
+    }
+}
+```
+
+* **JAVA annotations **
+
+Starting from Spring 2.5   it became possible to configure our class using annotations. So instead of using the XML to describe the configuration, you can move the bean configuration to the class itself by using annotations(@Component, @Autowired...)
+
+```java
+package com.melhamra;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("myClass")
+public class MyClass {
+    @Value("Hello World")
+    private String myField;
+
+    public String getMyField() {
+        return myField;
+    }
+
+    public void setMyField(String myField) {
+        this.myField = myField;
+    }
+}
+```
+
 
 
 
