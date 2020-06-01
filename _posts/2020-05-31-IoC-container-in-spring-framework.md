@@ -180,7 +180,7 @@ public class Application {
 
 if we will run these two programs, the result will be the same for both implementations:
 
-<img src="/assets/img/sample/implementation-container.PNG" alt="drawing" width="600" height="220"/>
+<img src="/assets/img/sample/implementation-container.PNG" alt="drawing" width="700" height="170"/>
 
 
 
