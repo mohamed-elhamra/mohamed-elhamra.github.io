@@ -41,5 +41,7 @@ The spring container doesn't know how to instantiate our object alone so to make
 
 > **Bean**: an object that is instantiated and managed by the Spring IoC container
 
-<img src="drawing.jpg" alt="drawing" width="200"/>
+Below the diagram that illustrates how the container works:
+
+<img src="/assets/img/" alt="drawing" width="400" height="400"/>
 
