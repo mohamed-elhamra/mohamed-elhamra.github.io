@@ -178,6 +178,9 @@ public class Application {
 }
 ```
 
+if we will run these two programs, the result will be the same for both implementations:
+
+
 
 
 
