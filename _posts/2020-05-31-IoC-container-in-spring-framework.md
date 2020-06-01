@@ -190,7 +190,7 @@ The **ApplicationContext** container is the superset of the **BeanFactory** cont
 • **ClassPathXmlApplicationContext** – Here, we need to set CLASSPATH of the bean configuration XML file in order to load the metadata of the beans from an XML file.<br />
 • **WebXmlApplicationContext** – Here, the container loads the XML file within a web application which has metadata of all beans.
 
-<img src="/assets/img/sample/metadata-container.PNG" alt="drawing" width="350" height="350"/>
+<img src="/assets/img/sample/type-container.jpg" alt="drawing" width="400" height="450"/>
 
 
 
