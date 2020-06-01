@@ -106,7 +106,7 @@ public class Config {
 }
 ```
 
-* **JAVA annotations **
+* **JAVA annotations**
 
 Starting from Spring 2.5   it became possible to configure our class using annotations. So instead of using the XML to describe the configuration, you can move the bean configuration to the class itself by using annotations(@Component, @Autowired...)
 
@@ -127,6 +127,53 @@ public class MyClass {
 
     public void setMyField(String myField) {
         this.myField = myField;
+    }
+}
+```
+
+# Type of containers in the spring framework
+
+There are two types of containers present in the Spring Framework.
+
+#### 1. Spring BeanFactory Container:
+It is the simplest container present in the Spring framework which provides the basic support for DI (Dependency Injection). We use the following interface to work with this container. <br />
+**org.springframework.beans.factory.BeanFactory**
+
+We will illustrate the implementation of this interface using the example above:
+
+```java
+package com.melhamra;
+
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+public class Application {
+    public static void main(String[] args) {
+        Resource res = new ClassPathResource("Beans.xml");
+        BeanFactory factory = new XmlBeanFactory(res);
+        MyClass myClass = (MyClass) factory.getBean("myClass");
+        System.out.println(myClass.getMyField());
+    }
+}
+```
+
+#### 2. Spring ApplicationContext Container:
+This is another container present in the spring container which adds extra enterprise-specific functionality. These functionalities include the capability to resolve textual messages from a properties file and publishing application events to the attentive event listeners. We use the following interface to work with this container. <br />
+**org.springframework.context.ApplicationContext**
+
+```java
+package com.melhamra;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+public class Application {
+    public static void main(String[] args) {
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(Config.class);
+        MyClass myClass = applicationContext.getBean("myClass",MyClass.class);
+        System.out.println(myClass.getMyField());
     }
 }
 ```
