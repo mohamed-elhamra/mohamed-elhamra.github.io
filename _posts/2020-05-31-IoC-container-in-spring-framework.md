@@ -43,5 +43,18 @@ The spring container doesn't know how to instantiate our object alone so to make
 
 Below the diagram that illustrates how the container works:
 
-<img src="/assets/img/sample/metadata-container.PNG" alt="drawing" width="400" height="400"/>
+<img src="/assets/img/sample/metadata-container.PNG" alt="drawing" width="350" height="350"/>
+
+# Configuration of the IoC container
+
+Configuration metadata represent how you, as an application developer, tell the Spring container to instantiate, configure, assemble the objects in your application.
+
+This configuration metadata  is nothing but bean definition, as we mentioned above the metadata can be represented as:
+
+* **XML file**
+
+
+
+
+
 
