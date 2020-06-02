@@ -10,8 +10,8 @@ tags: [spring container]
 
 --------------------------------------
 
-Today we will talk about one of the most frameworks in the world which is spring, but we will focus mainly on the IoC container of this framework.
-In the spring framework, the IoC container is considered as the heart of the whole framework because it's responsible for the creation of the object,  wiring the object together, configuring these objects, and handling the entire life cycle of these objects from their creation until they are completely destroyed.<br />
+Today we will talk about one of the most popular frameworks in the world which is Spring, but we will focus mainly on the IoC container of this framework.
+In the Spring framework, the IoC container is considered as the heart of the whole framework because it's responsible for the creation of the object,  wiring the object together, configuring these objects, and handling the entire life cycle of these objects from their creation until they are completely destroyed.<br />
 So in the next paragraphs, we will clarify more how the container does all those works.
 
 # Inversion of control (IoC)
@@ -32,9 +32,9 @@ Spring framework implements the inversion of control through different mechanism
 * Service locator pattern
 * Strategy design pattern
 * Factory pattern
-
-> I will talk about these mechanisms in future blogs
-
+```
+I will talk about these mechanisms in future blogs
+```
 # How did the IoC container work?
 
 The spring container doesn't know how to instantiate our object alone so to make that we need to specify a configuration metadata to our container, this configuration can be specified through the XML file, Java code, Java annotations, then the spring container uses our POJO class as well as the configuration, and he can create the beans.
