@@ -137,7 +137,7 @@ There are two types of containers present in the Spring Framework.
 
 #### 1. Spring BeanFactory Container:
 It is the simplest container present in the Spring framework which provides the basic support for DI (Dependency Injection). We use the following interface to work with this container. <br />
-` **org.springframework.beans.factory.BeanFactory** `
+`org.springframework.beans.factory.BeanFactory`
 
 We will illustrate the implementation of this interface using the example above:
 
@@ -161,7 +161,7 @@ public class Application {
 
 #### 2. Spring ApplicationContext Container:
 This is another container present in the spring container which adds extra enterprise-specific functionality. These functionalities include the capability to resolve textual messages from a properties file and publishing application events to the attentive event listeners. We use the following interface to work with this container. <br />
-**org.springframework.context.ApplicationContext**
+`org.springframework.context.ApplicationContext`
 
 ```java
 package com.melhamra;
@@ -184,11 +184,11 @@ if we will run these two programs, the result will be the same for both implemen
 
 
 #### 4. BeanFactory vs ApplicationContext Container:
-The **ApplicationContext** container is the superset of the **BeanFactory** container. It means that all functionality of the BeanFactory container is present in the ApplicationContext container. Therefore, ApplicationContext container is often preferred over BeanFactory container. BeanFactory is often used to build lightweight applications such as mobile devices, applet-based applications, etc. where data volume as well as speed is important. Below are the most commonly used ApplicationContext implementations.
+The `ApplicationContext` container is the superset of the `BeanFactory` container. It means that all functionality of the `BeanFactory` container is present in the `ApplicationContext` container. Therefore, `ApplicationContext` container is often preferred over `BeanFactory` container. `BeanFactory` is often used to build lightweight applications such as mobile devices, applet-based applications, etc. where data volume as well as speed is important. Below are the most commonly used `ApplicationContext` implementations.
 
-• **FileSystemXmlApplicationContext** – Here, we have to provide the full path of the XML bean configuration file to the constructor in order to load the metadata of the beans from an XML file.<br />
-• **ClassPathXmlApplicationContext** – Here, we need to set CLASSPATH of the bean configuration XML file in order to load the metadata of the beans from an XML file.<br />
-• **WebXmlApplicationContext** – Here, the container loads the XML file within a web application which has metadata of all beans.
+• `FileSystemXmlApplicationContext` – Here, we have to provide the full path of the XML bean configuration file to the constructor in order to load the metadata of the beans from an XML file.<br />
+• `ClassPathXmlApplicationContext` – Here, we need to set CLASSPATH of the bean configuration XML file in order to load the metadata of the beans from an XML file.<br />
+• `WebXmlApplicationContext` – Here, the container loads the XML file within a web application which has metadata of all beans.
 
 <img src="/assets/img/sample/type-container.jpg" alt="drawing" width="400" height="450"/>
 
@@ -196,7 +196,7 @@ The **ApplicationContext** container is the superset of the **BeanFactory** cont
 
 That was all for this blog, I hope you enjoy it and you understood all the points that we have touched on, if you have questions don't hesitate to ask me.<br />
 if you want to test the examples above, below you will find my Github code link:<br />
-[**IoC container Spring**](https://github.com/mohamed-elhamra/IoC-container-in-Spring.git)
+[**IoC container Spring demo**](https://github.com/mohamed-elhamra/IoC-container-in-Spring.git)
 
 
 
