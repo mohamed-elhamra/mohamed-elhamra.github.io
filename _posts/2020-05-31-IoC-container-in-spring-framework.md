@@ -12,7 +12,7 @@ tags: [spring container]
 
 Today we will talk about one of the most popular frameworks in the world which is Spring, but we will focus mainly on the IoC container of this framework.
 In the Spring framework, the IoC container is considered as the heart of the whole framework because it's responsible for the creation of the object,  wiring the object together, configuring these objects, and handling the entire life cycle of these objects from their creation until they are completely destroyed.<br />
-So in the next paragraphs, we will clarify more how the container does all those works.
+So in the next sections, we will clarify more how the container does all those works.
 
 # Inversion of control (IoC)
 
@@ -32,12 +32,12 @@ Spring framework implements the inversion of control through different mechanism
 * Service locator pattern
 * Strategy design pattern
 * Factory pattern
-```
-I will talk about these mechanisms in future blogs
-```
+
+> I will talk about these mechanisms in future blogs
+
 # How did the IoC container work?
 
-The spring container doesn't know how to instantiate our object alone so to make that we need to specify a configuration metadata to our container, this configuration can be specified through the XML file, Java code, Java annotations, then the spring container uses our POJO class as well as the configuration, and he can create the beans.
+The Spring container doesn't know how to instantiate our object alone so to make that we need to specify a configuration metadata to our container, this configuration can be specified through the XML file, Java code, Java annotations, then the spring container uses our POJO class as well as the configuration, and he can create the beans.
 
 > **Bean**: an object that is instantiated and managed by the Spring IoC container
 
@@ -49,7 +49,7 @@ Below the diagram that illustrates how the container works:
 
 Configuration metadata represent how you, as an application developer, tell the Spring container to instantiate, configure, assemble the objects in your application.
 
-This configuration metadata  is nothing but bean definition, as we mentioned above the metadata can be represented as:
+This configuration metadata  is nothing but bean definition, as we mentioned above, the metadata can be represented as:
 
 * **XML file**
 
@@ -81,7 +81,7 @@ public class MyClass {
 </beans>
 ```
 
-In the example above we tell the Spring container to create a Bean of the class HelloWorld and instantiate the field "message" with the value "Hello World"
+In the example above, we tell the Spring container to create a Bean of the class HelloWorld and instantiate the field "message" with the value "Hello World"
 
 * **JAVA code**
 
@@ -108,7 +108,7 @@ public class Config {
 
 * **JAVA annotations**
 
-Starting from Spring 2.5   it became possible to configure our class using annotations. So instead of using the XML to describe the configuration, you can move the bean configuration to the class itself by using annotations(@Component, @Autowired...)
+Starting from Spring 2.5   it became possible to configure our class using annotations. So instead of using the XML to describe the configuration, you can move the bean configuration to the class itself by using annotations(`@Component`, `@Autowired`...)
 
 ```java
 package com.melhamra;
@@ -137,7 +137,7 @@ There are two types of containers present in the Spring Framework.
 
 #### 1. Spring BeanFactory Container:
 It is the simplest container present in the Spring framework which provides the basic support for DI (Dependency Injection). We use the following interface to work with this container. <br />
-**org.springframework.beans.factory.BeanFactory**
+` **org.springframework.beans.factory.BeanFactory** `
 
 We will illustrate the implementation of this interface using the example above:
 
