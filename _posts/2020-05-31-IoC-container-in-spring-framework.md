@@ -1,7 +1,7 @@
 ---
 title: IoC container in spring framework
 author: Mohamed Elhamra
-date: 2020-06-07 16:00:00 +0800
+date: 2020-06-01 16:00:00 +0800
 categories: [Blogging, spring]
 tags: [spring container]
 ---
