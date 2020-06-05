@@ -11,8 +11,6 @@
   type: twitter
   icon: 'fab fa-twitter'
   
-  type: linkedin
-  icon: 'fab fa-linkedin'   # icons powered by https://fontawesome.com/
  
 -
   type: email
