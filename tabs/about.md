@@ -1,11 +1,11 @@
 ---
 title: About
 
-# The About page
-# v2.0
-# https://github.com/cotes2020/jekyll-theme-chirpy
-# © 2017-2019 Cotes Chung
-# MIT License
 ---
 
-> **Note**: Add Markdown syntax content to file `tabs/about.md` and it will show up on this page.
+Welcome visitor!!
+
+I'm a Java and Spring developer as well as interested by the web domain, the purpose of this web site is posting every Sunday a blog about somethings that I already leaned. To know more about me, below, the link of my LinkedIn:
+
+**My LinkedIn**](https://www.linkedin.com/in/mohamed-elhamra/)
+
