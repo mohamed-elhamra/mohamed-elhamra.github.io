@@ -190,6 +190,8 @@ public class Configuration {
 
 **Process Flow:** The process flow of bean instantiation and injection of dependencies is given in the picture below:
 
+<img src="/assets/img/sample/flow-di.PNG" alt="drawing" width="400" height="400"/>
+
 
 
 
