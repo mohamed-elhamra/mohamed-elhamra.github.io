@@ -154,7 +154,7 @@ public class Configuration {
 ```
 
 If we compare  the class `Computer` used in the first section and the one used in this section we can conclude that:<br />
-* The class `Computer` is no longer responsible for the creation of the dependencies.
+* The class `Computer` is no longer responsible for the instantiation of the dependencies.
 * The dependencies are created by the **IoC container** using **DI**.
 
 #### 2. Conctructor dependency injection
