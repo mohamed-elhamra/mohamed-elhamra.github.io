@@ -59,6 +59,10 @@ public class Computer {
 }
 ```
 
+Imagine what if the class  Computer is no longer needs the class AsusHardDisk and want to use HpHardDisk?<br />
+
+Now, we are facing a problem because we will need to recreate the class Computer with the new hard disk.
+
 
 
 
