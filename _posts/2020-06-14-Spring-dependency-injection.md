@@ -157,7 +157,7 @@ If we compare  the class `Computer` used in the first section and the one used i
 * The class `Computer` is no longer responsible for the creation of the dependencies.
 * The dependencies are created by the **IoC container** using **DI**.
 
-#### 1. Conctructor dependency injection
+#### 2. Conctructor dependency injection
 
 In this, the DI will be injected with the help of contructors.
 
