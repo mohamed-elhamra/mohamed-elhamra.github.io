@@ -21,3 +21,61 @@ but I will give you an example to illustrate more this mechanism.
 Suppose we have two classes, `Computer` and `AsusHardDisk`, and the class `Computer` uses some functionality of the `AsusHardDisk` class, so we need to create an object of `AsusHardDisk` inside the `Computer` to make calls to these functionalities, now we can say that class `Computer` has a dependency on class `AsusHardDisk`.
 
 
+```java                                                    
+package com.melhamra;
+
+public class AsusHardDisk {
+    
+    private String someData;
+
+    public AsusHardDisk(String someData) {
+        this.someData = someData;
+    }
+
+    public String getSomeData() {
+        return someData;
+    }
+
+    public void setSomeData(String someData) {
+        this.someData = someData;
+    }
+}
+```
+
+```java
+package com.melhamra;
+
+public class Computer {
+
+    private AsusHardDisk asusHardDisk = new AsusHardDisk("Data");
+
+    public AsusHardDisk getAsusHardDisk() {
+        return asusHardDisk;
+    }
+
+    public void setAsusHardDisk(AsusHardDisk asusHardDisk) {
+        this.asusHardDisk = asusHardDisk;
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
