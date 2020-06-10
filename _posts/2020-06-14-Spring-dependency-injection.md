@@ -15,7 +15,7 @@ Before talking about the implementation of this mechanism, I need first to defin
 
 > In software engineering, **dependency injection** is a technique in which an object receives other objects that it depends on. These other objects are called dependencies.
 
-That’s the Wikipedia definition, I know that's not enough to understand, 
+That’s the [**Wikipedia definition**](https://en.wikipedia.org/wiki/Dependency_injection), I know that's not enough to understand, 
 but I will give you an example to illustrate more this mechanism.
 
 
