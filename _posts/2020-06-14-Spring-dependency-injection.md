@@ -124,25 +124,6 @@ public class Computer {
 ```
 
 ```java
-package com.melhamra;
-
-public class Computer {
-
-    //Now we can work with any type of hard disk
-    private HardDisk hardDisk;
-
-    public HardDisk getHardDisk() {
-        return hardDisk;
-    }
-
-    public void setHardDisk(HardDisk hardDisk) {
-        this.hardDisk = hardDisk;
-    }
-}
-
-```
-
-```java
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
