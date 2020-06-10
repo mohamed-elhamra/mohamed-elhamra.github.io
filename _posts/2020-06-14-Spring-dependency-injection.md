@@ -59,9 +59,14 @@ public class Computer {
 }
 ```
 
-Imagine what if the class  Computer is no longer needs the class AsusHardDisk and want to use HpHardDisk?<br />
+Imagine what if the class `Computer` is no longer needs the class `AsusHardDisk` and want to use `HpHardDisk` ?<br />
 
-Now, we are facing a problem because we will need to recreate the class Computer with the new hard disk.
+Now, we are facing a problem because we will need to recreate the class `Computer` with the new hard disk.<br />
+
+But when using the dependency injection you are no longer need to instantiate the dependencies inside your classes, instead, the DI does all the work for you.<br />
+DI is considered as a middleman between a class that needs another, especially DI makes our class Computer independent from creating the HardDisk class.<br />
+
+In general, the IoC container lets you inject required objects in the runtime instead of the compile-time by the dependency injection, in order to make java classes independent of each other (loosely coupling) and frees them from object creation and maintenance.
 
 
 
