@@ -69,8 +69,8 @@ But when using the **dependency injection** you are no longer need to instantiat
 In general, the **IoC container** lets you inject required objects in the runtime instead of the compile-time by the **dependency injection**, in order to make java classes independent of each other (loosely coupling) and frees them from object creation and maintenance.<br />
 
 Basically, in Spring there are two types of DI:
-    * Setter dependency injection.
-    * Constructor dependency injection.  
+* Setter dependency injection.
+* Constructor dependency injection.  
 
 
 
