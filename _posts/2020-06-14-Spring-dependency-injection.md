@@ -74,7 +74,7 @@ Basically, in Spring there are two types of DI:
 #### 1. Setter dependency injection
 
 The dependencies will be injected with the help of the setters.<br />
-Example:
+**Example:**
 
 ```java
 package com.melhamra;
@@ -111,6 +111,12 @@ public class Computer {
 
     //Now we can work with any type of hard disk
     private HardDisk hardDisk;
+    
+    public Computer(HardDisk hardDisk) {
+        this.hardDisk = hardDisk;
+    }
+
+    public Computer() {}
 
     public HardDisk getHardDisk() {
         return hardDisk;
@@ -150,6 +156,37 @@ public class Configuration {
 If we compare  the class `Computer` used in the first section and the one used in this section we can conclude that:<br />
 * The class `Computer` is no longer responsible for the creation of the dependencies.
 * The dependencies are created by the **IoC container** using **DI**.
+
+#### 1. Conctructor dependency injection
+
+In this, the DI will be injected with the help of contructors.
+
+**Example:** Let us take the same example as of setter dependency injection but we will change just the configuration.
+
+```java
+package com.melhamra;
+
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+
+@org.springframework.context.annotation.Configuration
+@ComponentScan
+public class Configuration {
+
+    @Bean("asusHardDisk")
+    public AsusHardDisk getAsusHardDisk(){
+        return new AsusHardDisk();
+    }
+
+    @Bean("computer")
+    public Computer getComputer(){
+        // DI using constructor
+        Computer computer = new Computer(getAsusHardDisk());
+        return computer;
+    }
+}
+```
 
 
 
