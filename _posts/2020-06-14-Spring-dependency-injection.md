@@ -13,9 +13,11 @@ Hello audience, today I am going to discuss the spring dependency injection whic
 
 Before talking about the implementation of this mechanism, I need first to define the dependency injection:<br />
 
-> In software engineering, **dependency injection** is a technique in which an object receives other objects that it depends on. These other objects are called dependencies.
+> In software engineering, **dependency injection** is a technique in which an object receives other objects that it depends on. These other objects are called dependencies.<br />
 
 That’s the [**Wikipedia definition**](https://en.wikipedia.org/wiki/Dependency_injection), I know that's not enough to understand, 
 but I will give you an example to illustrate more this mechanism.
+
+Suppose we have two classes, `Computer` and `AsusHardDisk`, and the class `Computer` uses some functionality of the `AsusHardDisk` class, so we need to create an object of `AsusHardDisk` inside the `Computer` to make calls to these functionalities, now we can say that class `Computer` has a dependency on class `AsusHardDisk`.
 
 
