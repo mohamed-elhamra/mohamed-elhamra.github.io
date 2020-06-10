@@ -188,7 +188,7 @@ public class Configuration {
 }
 ```
 
-> **Note:** All the codes above are available via this link : [**Di Demo**](https://github.com/mohamed-elhamra/DI-demo.git)
+> **Note:** All the codes above are available via this link : [**DI Demo**](https://github.com/mohamed-elhamra/DI-demo.git)
 <br />
 
 **Process Flow:** The process flow of bean instantiation and injection of dependencies is given in the picture below:
