@@ -188,11 +188,25 @@ public class Configuration {
 }
 ```
 
-> **Note:** All the code above are available via this link : [**Di Demo**](https://github.com/mohamed-elhamra/DI-demo.git)
+> **Note:** All the codes above are available via this link : [**Di Demo**](https://github.com/mohamed-elhamra/DI-demo.git)
 <br />
 **Process Flow:** The process flow of bean instantiation and injection of dependencies is given in the picture below:
 
 <img src="/assets/img/sample/flow-di.PNG" alt="drawing" width="400" height="400"/>
+
+# Summary
+
+As you can see, DI has many benefits such as:
+* Helping in Unit testing.
+* Boiler plate code is reduced, as initializing of dependencies is done by the injector component.
+* Extending the application becomes easier.
+* Helps to enable loose coupling, which is important in application programming.<br />
+
+That was all for this blog, I hope you enjoy it and you understood all the points that we have touched on.
+
+
+
+
 
 
 
