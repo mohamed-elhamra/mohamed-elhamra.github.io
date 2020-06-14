@@ -1,7 +1,7 @@
 ---
 title: Spring dependency injection
 author: Mohamed Elhamra
-date: 2020-06-14 16:00:00 +0800
+date: 2020-06-14 14:00:00 +0800
 categories: [Blogging, spring]
 tags: [spring DI]
 ---
