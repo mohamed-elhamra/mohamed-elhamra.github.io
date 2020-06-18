@@ -65,7 +65,7 @@ Responsible to render model data on view files.<br />
 
 # Request execution flow
 
-<img src="/assets/img/sample/metadata-container.PNG" alt="drawing" width="350" height="350"/>
+<img src="/assets/img/sample/request-execution-flow.png" alt="drawing" width="350" height="350"/>
 
 
 
