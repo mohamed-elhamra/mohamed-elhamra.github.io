@@ -15,7 +15,7 @@ So please enjoy reading!
 
 # Spring MVC components
 
-The Spring Web MVC framework provides Model-View-Controller (MVC) architecture and a lot of ready components that can be used to develop Web applications.
+The **Spring Web MVC** framework provides Model-View-Controller (MVC) architecture and a lot of ready components that can be used to develop Web applications.
 In this section, we will focus mainly on the components:
 
 ## 1-Front controller
@@ -73,7 +73,7 @@ The Spring Web MVC framework is designed around the `DispatcherServlet`.
 
 1. Incoming Http request will be received by the Dispatcher servlet, which will send request URL to the HandlerMapper.<br />
 
-2. HandlerMapper will identify the appropriate request handler (controller) which is responsible to handle the request. After the HandlerMapper will send handler request details to `DispatcherServlet`. <br />
+2. `HandlerMapper` will identify the appropriate request handler (controller) which is responsible to handle the request. After the `HandlerMapper` will send handler request details to `DispatcherServlet`. <br />
 
 3. `DispatcherServlet` will call the respective Controller class method.<br />
 
