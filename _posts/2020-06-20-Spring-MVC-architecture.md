@@ -73,23 +73,23 @@ The Spring Web MVC framework is designed around the `DispatcherServlet`.
 
 1. Incoming Http request will be received by the Dispatcher servlet, which will send request URL to the HandlerMapper.<br />
 
-2. HandlerMapper will identify the appropriate request handler (controller) which is responsible to handle the request. After the HandlerMapper will send handler request details to DispatcherServlet. <br />
+2. HandlerMapper will identify the appropriate request handler (controller) which is responsible to handle the request. After the HandlerMapper will send handler request details to `DispatcherServlet`. <br />
 
-3. DispactherServlet will call the respective Controller class method.<br />
+3. `DispatcherServlet` will call the respective Controller class method.<br />
 
-4. Controller method will process the request and will send ModelAndView object to DispatcherServlet:
-   * Model
-   * View
+4. Controller method will process the request and will send `ModelAndView` object to `DispatcherServlet`:
+   * Model --> Data
+   * View  --> Logical file name
 
-5. DispatcherServlet will send the view name to the ViewResolver. <br />
+5. `DispatcherServlet` will send the view name to the `ViewResolver`. <br />
 
-6. ViewResolver will identify the view location & extension and sends data to DispatcherServlet.<br />
+6. `ViewResolver` will identify the view location & extension and sends data to `DispatcherServlet`.<br />
 
-7. DispatcherServlet will give the model and view details to the view component.<br />
+7. `DispatcherServlet` will give the model and view details to the view component.<br />
 
 8. View component will render the appropriate view which holds the data model.<br />
 
-9. DispactherServlet will send back the response to the browser.<br />
+9. `DispatcherServlet` will send back the response to the browser.<br />
   
   
   
