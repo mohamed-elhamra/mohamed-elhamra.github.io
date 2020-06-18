@@ -14,3 +14,8 @@ Hello everyone, in this article I will discuss the Spring web MVC, the component
 So please enjoy reading!
 
 # Spring MVC components
+
+The Spring Web MVC framework provides Model-View-Controller (MVC) architecture and a lot of ready components that can be used to develop Web applications.
+In this section, we will focus mainly on the components:
+
+## 1-Front controller
