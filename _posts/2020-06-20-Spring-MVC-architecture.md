@@ -27,3 +27,20 @@ For example: <br />
 
 In Spring Web  MVC based application we will use the `DispatcherServlet` as a front controller which is a pre-defined servlet provided by the Spring MVC module. <br />
 >💡Java Servlet are programs that act as a middle layer between a request coming from a Web browser or HTTP client, and applications on the HTTP server.
+
+## 2.Handler mapper
+
+The handler mapper is a pre-defined class available in Spring MVC which is responsible to identify the request handler (controller) and return details to the `DispatcherServlet`.
+
+## 3.Controller
+A controller is a class  which is responsible to handle the request, there are some pre-defined controllers available in the Spring MVC like below: <br />
+* `org.springframework.web.servlet.mvc.SimpleFormController`
+* `org.springframework.web.servlet.mvc.AbstractFormController`
+* `org.springframework.web.servlet.mvc.multiaction.MultiActionControllerr` etc...
+
+
+
+
+
+
+
