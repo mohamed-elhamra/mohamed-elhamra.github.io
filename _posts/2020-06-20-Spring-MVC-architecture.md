@@ -69,11 +69,17 @@ Responsible to render model data on view files.<br />
 
 The Spring Web MVC framework is designed around the `DispatcherServlet`.
 
-🔍 What happens behind the scene when an HTTP request is sent to the server. <br />
+🔍 What happens behind the scene when an HTTP request is sent to the server: <br />
 
 1. Incoming Http request will be received by the Dispatcher servlet, which will send request URL to the HandlerMapper.<br />
 
-2. HandlerMapper will identify the appropriate request handler (controller) which is responsible to handle the request. After the HandlerMapper will send handler request details to DispatcherServlet. 
+2. HandlerMapper will identify the appropriate request handler (controller) which is responsible to handle the request. After the HandlerMapper will send handler request details to DispatcherServlet. <br />
+
+3. DispactherServlet will call the respective Controller class method.<br />
+
+4. Controller method will process the request and will send ModelAndView object to DispatcherServlet:
+  * Model
+  * View
 
 
 
