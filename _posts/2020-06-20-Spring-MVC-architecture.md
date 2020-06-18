@@ -19,3 +19,10 @@ The Spring Web MVC framework provides Model-View-Controller (MVC) architecture a
 In this section, we will focus mainly on the components:
 
 ## 1-Front controller
+
+The front controller is responsible to perform pre-processing and post-processing of incoming requests.
+For example: <br />
+* pre-processing request: capturing form data incoming from the client.
+* post-processing request: retrieving data to client.<br />
+
+In Spring Web  MVC based application we will use the DispatcherServlet as a front controller which is a pre-defined servlet provided by the Spring MVC module. 
