@@ -48,6 +48,20 @@ Once the request processing is completed the controller will return the `org.spr
 The **model** holds data retrieved from the data source. <br />
 The **view** represents a logical view name.
 
+## 5.View resolvers
+
+In Spring MVC we have multiple view resolver classes that implement the interface `org.springframework.web.servlet.ViewResolver` :<br />
+* `org.springframework.web.servlet.view.InternalResourceViewResolver`
+* `org.springframework.web.servlet.view.UrlBasedViewResolver` etc...<br />
+
+These view resolvers are responsible to identify view files (location and extension).
+
+## 6.View component
+
+Responsible to render model data on view files.<br />
+
+>💡 All the above-mentioned components (i.e. HandlerMapping, Controller, and ViewResolver) are parts of WebApplicationContext, which is an extension of the ApplicationContext with some extra features necessary for web applications.
+
 
 
 
