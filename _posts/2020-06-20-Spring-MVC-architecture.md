@@ -71,7 +71,7 @@ The Spring Web MVC framework is designed around the `DispatcherServlet`.
 
 🔍 What happens behind the scene when an HTTP request is sent to the server. <br />
 
-1. Incoming Http request will be received by the Dispatcher servlet, which will send request URL to the HandlerMapper.
+1. Incoming Http request will be received by the Dispatcher servlet, which will send request URL to the HandlerMapper.<br />
 2. HandlerMapper will identify the appropriate request handler (controller) which is responsible to handle the request. After the HandlerMapper will send handler request details to DispatcherServlet. 
 
 
