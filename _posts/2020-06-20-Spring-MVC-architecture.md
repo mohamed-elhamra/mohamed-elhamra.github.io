@@ -1,7 +1,7 @@
 ---
 title: Spring MVC architecture
 author: Mohamed Elhamra
-date: 2020-06-17 16:00:00 +0800
+date: 2020-06-20 16:00:00 +0800
 categories: [Blogging, spring]
 tags: [spring MVC]
 ---
