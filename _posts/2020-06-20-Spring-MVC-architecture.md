@@ -63,6 +63,11 @@ Responsible to render model data on view files.<br />
 >💡 All the above-mentioned components (i.e. HandlerMapping, Controller, and ViewResolver) are parts of WebApplicationContext, which is an extension of the ApplicationContext with some extra features necessary for web applications.
 
 
+# Request execution flow
+
+<img src="/assets/img/sample/metadata-container.PNG" alt="drawing" width="350" height="350"/>
+
+
 
 
 
