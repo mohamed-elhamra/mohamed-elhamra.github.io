@@ -36,7 +36,26 @@ The handler mapper is a pre-defined class available in Spring MVC which is respo
 A controller is a class  which is responsible to handle the request, there are some pre-defined controllers available in the Spring MVC like below: <br />
 * `org.springframework.web.servlet.mvc.SimpleFormController`
 * `org.springframework.web.servlet.mvc.AbstractFormController`
-* `org.springframework.web.servlet.mvc.multiaction.MultiActionControllerr` etc...
+* `org.springframework.web.servlet.mvc.multiaction.MultiActionControllerr` etc...<br />
+
+Also, we can define our costume controllers using the `@Controller` annotation.
+
+## 4.Model and View
+
+Once the request processing is completed the controller will return the `org.springframework.web.servlet.ModelAndView` object to the `DispatcherServlet`.<br />
+The **model** holds data retrieved from the data source. <br />
+The **view** represents a logical view name.
+
+
+
+
+
+
+
+
+
+
+
 
 
 
