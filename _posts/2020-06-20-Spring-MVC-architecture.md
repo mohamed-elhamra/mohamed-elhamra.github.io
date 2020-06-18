@@ -78,8 +78,8 @@ The Spring Web MVC framework is designed around the `DispatcherServlet`.
 3. `DispatcherServlet` will call the respective Controller class method.<br />
 
 4. Controller method will process the request and will send `ModelAndView` object to `DispatcherServlet`:
-   * Model &rarr Data
-   * View  &rarr Logical file name
+   * Model &#8594; Data
+   * View  &#8594; Logical file name
 
 5. `DispatcherServlet` will send the view name to the `ViewResolver`. <br />
 
