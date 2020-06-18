@@ -26,6 +26,7 @@ For example: <br />
 * **post-processing request:** retrieving data to client.<br />
 
 In Spring Web  MVC based application we will use the `DispatcherServlet` as a front controller which is a pre-defined servlet provided by the Spring MVC module. <br />
+
 >💡Java Servlet are programs that act as a middle layer between a request coming from a Web browser or HTTP client, and applications on the HTTP server.
 
 ## 2.Handler mapper
@@ -43,6 +44,7 @@ Also, we can define our costume controllers using the `@Controller` annotation.
 ## 4.Model and View
 
 Once the request processing is completed the controller will return the `org.springframework.web.servlet.ModelAndView` object to the `DispatcherServlet`.<br />
+
 The **model** holds data retrieved from the data source. <br />
 The **view** represents a logical view name.
 
