@@ -25,4 +25,5 @@ For example: <br />
 * **pre-processing request:** capturing form data incoming from the client.
 * **post-processing request:** retrieving data to client.<br />
 
-In Spring Web  MVC based application we will use the DispatcherServlet as a front controller which is a pre-defined servlet provided by the Spring MVC module. 
+In Spring Web  MVC based application we will use the `DispatcherServlet` as a front controller which is a pre-defined servlet provided by the Spring MVC module. <br />
+>💡Java Servlet are programs that act as a middle layer between a request coming from a Web browser or HTTP client, and applications on the HTTP server.
