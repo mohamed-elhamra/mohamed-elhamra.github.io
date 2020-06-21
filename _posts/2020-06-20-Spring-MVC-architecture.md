@@ -1,7 +1,7 @@
 ---
 title: Spring MVC architecture
 author: Mohamed Elhamra
-date: 2020-06-20 16:00:00 +0800
+date: 2020-06-21 14:00:00 +0800
 categories: [Blogging, spring]
 tags: [spring MVC]
 ---
@@ -90,6 +90,11 @@ The Spring Web MVC framework is designed around the `DispatcherServlet`.
 8. View component will render the appropriate view which holds the data model.<br />
 
 9. `DispatcherServlet` will send back the response to the browser.<br />
+
+# Summary 
+
+That was all for this blog, I tried to clarify all the components of the **Spring Web MVC** and their roles as well as the request execution flow, I hope you enjoy it.<br />
+Don't hesitate to share this blog whit your friends!!! 😄 😄 
   
   
   
