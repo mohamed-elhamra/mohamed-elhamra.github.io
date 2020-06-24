@@ -22,3 +22,25 @@ After talking about Hibernate, we need first to understand the **JPA**.<br />
 **JPA** or **Java Persistence API** is a standard for mapping Java objects to relational databases, which means that each object is represented as a table in the database, in other words, the Java objects can outlive outside the Java application and the **JPA** specification lets you define which objects should be persisted, and how those objects should be persisted in your Java applications, as well as via the **JPA** the developer can map, store, update, and retrieve data from relational databases to Java objects and vice versa.<br />
 
 > 💡 **JPA** specifications are defined with annotations in `javax.presistence package`.
+
+Whereas we have some problems here because the **JPA** is just a specification, meaning there is no implementation. You can annotate your classes as much as you would like with **JPA annotations**, however, without implementation, nothing will happen.<br />
+We can think that **JPA** is an interface but in order to work with, we need an implementation.
+
+# JPA implementations (Hibernate)
+
+As you can see, in the section above we found out a problem which is the implementation of **JPA**, but don't worry **JPA** has many implementations the most of them is **Hibernate framework** in there are others like **EclipseLink** and **Apache OpenJPA**.<br />
+
+So, from everything we've seen, we can define **hibernate** as Java-based ORM tool that provides a framework for mapping application domain objects to the relational database tables and vice versa, moreover by Hibernate we can manipulate data from relational databases to Java objects without working with the SQL because Hibernate contains predefined methods for creating, updating, deleting, inserting objects from and to database tables.
+
+
+
+
+
+
+
+
+
+
+
+
+
