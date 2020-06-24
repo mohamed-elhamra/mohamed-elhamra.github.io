@@ -32,6 +32,8 @@ As you can see, in the section above we found out a problem which is the impleme
 
 So, from everything we've seen, we can define **Hibernate** as **Java-based ORM tool** that provides a framework for mapping application domain objects to the relational database tables and vice versa, moreover by Hibernate we can manipulate data from relational databases to Java objects without working with the **SQL** because Hibernate contains predefined methods for creating, updating, deleting, inserting objects from and to database tables.
 
+<img src="/assets/img/sample/orm-mapping.PNG" alt="drawing" width="685" height="150"/>
+
 # Hibernate architecture
 
 <img src="/assets/img/sample/hibernate-architecture.PNG" alt="drawing" width="410" height="410"/>
