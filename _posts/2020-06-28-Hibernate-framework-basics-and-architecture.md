@@ -30,7 +30,10 @@ We can think that **JPA** is an interface but in order to work with, we need an 
 
 As you can see, in the section above we found out a problem which is the implementation of **JPA**, but don't worry **JPA** has many implementations the most of them is **Hibernate framework** in there are others like **EclipseLink** and **Apache OpenJPA**.<br />
 
-So, from everything we've seen, we can define **hibernate** as Java-based ORM tool that provides a framework for mapping application domain objects to the relational database tables and vice versa, moreover by Hibernate we can manipulate data from relational databases to Java objects without working with the SQL because Hibernate contains predefined methods for creating, updating, deleting, inserting objects from and to database tables.
+So, from everything we've seen, we can define **Hibernate** as **Java-based ORM tool** that provides a framework for mapping application domain objects to the relational database tables and vice versa, moreover by Hibernate we can manipulate data from relational databases to Java objects without working with the **SQL** because Hibernate contains predefined methods for creating, updating, deleting, inserting objects from and to database tables.
+
+# Hibernate architecture
+
 
 
 
