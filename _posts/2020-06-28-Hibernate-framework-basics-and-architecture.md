@@ -41,6 +41,7 @@ As you can see in the picture **Hibernate** holds several components. In this se
 **Configuration object:** `org.hibernate.cfg.Configuration` is a predefined class which holds configuration properties of **Hibernate**, it's created first when creating the Hibernate application, it has two components: 
    * Database connection which provides the configuration for the connection.
    * The class mapping setup which creates the connection between the java class and the database.
+   
 
 
 **SessionFactory object:**  It is instantiated by the `Configuration` Object, it's a factory of Session and client of `ConnectionProvider`. It holds second-level cache (optional) of data.<br />
@@ -55,13 +56,16 @@ The `org.hibernate.SessionFactory` interface provides factory methods to create 
 <img src="/assets/img/sample/jdbc.PNG" alt="drawing" width="685" height="150"/>
 
 
+
 **Transaction:** The `org.hibernate.Transaction` interface provides methods for transaction management and handles the transaction works in the Hibernate framework.
+
 
 
 **Query object:** The `org.hibernate.query.Query` interface used to manipulate the persistent  objects (creation, retrieving data ...)
 using SQL or HQL.
 
 > 👉Note: HQL or Hibernate query language is an object-oriented query language, similar to SQL, but instead of operating on tables and columns, HQL works with persistent objects and their properties.
+
 
 
 **Criteria object:** `org.hibernate.Criteria` interface is also used to manipulate the persistent object but by executing the object-oriented criteria queries,  meaning that this interface provides predefined methods to add criteria to a query.
