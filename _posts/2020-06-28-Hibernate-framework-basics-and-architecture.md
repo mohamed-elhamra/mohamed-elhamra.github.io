@@ -34,7 +34,7 @@ So, from everything we've seen, we can define **Hibernate** as **Java-based ORM 
 
 # Hibernate architecture
 
-<img src="/assets/img/sample/hibernate-architecture.PNG" alt="drawing" width="390" height="390"/>
+<img src="/assets/img/sample/hibernate-architecture.PNG" alt="drawing" width="410" height="410"/>
 
 As you can see in the picture **Hibernate** holds several components. In this section I will try to clarify each component and his role:<br />
 
