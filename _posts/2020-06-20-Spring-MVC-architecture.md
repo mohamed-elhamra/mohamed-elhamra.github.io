@@ -23,7 +23,7 @@ In this section, we will focus mainly on the components:
 The front controller is responsible to perform pre-processing and post-processing of incoming requests.<br />
 For example: <br />
 * **pre-processing request:** capturing form data incoming from the client.
-* **post-processing request:** retrieving data to client.<br />
+* **post-processing request:** returning data to client.<br />
 
 In Spring Web  MVC based application we will use the `DispatcherServlet` as a front controller which is a pre-defined servlet provided by the Spring MVC module. <br />
 
@@ -37,7 +37,7 @@ The handler mapper is a pre-defined class available in Spring MVC which is respo
 A controller is a class  which is responsible to handle the request, there are some pre-defined controllers available in the Spring MVC like below: <br />
 * `org.springframework.web.servlet.mvc.SimpleFormController`
 * `org.springframework.web.servlet.mvc.AbstractFormController`
-* `org.springframework.web.servlet.mvc.multiaction.MultiActionControllerr` etc...<br />
+* `org.springframework.web.servlet.mvc.multiaction.MultiActionController` etc...<br />
 
 Also, we can define our costume controllers using the `@Controller` annotation.
 
