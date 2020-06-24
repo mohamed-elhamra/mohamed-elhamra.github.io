@@ -50,6 +50,31 @@ The `org.hibernate.SessionFactory` interface provides factory methods to create 
 **Session object:** It is considered as an interface between the data stored in the database and the application. It is a short-lived object that wraps the **JDBC connection** also it's a factory of `Transaction`, `Query`, and `Criteria` as well as the `org.hibernate.Session` interface provides methods to insert, update, and delete the objects. It holds the first-level cache (mandatory) of data.
 
 
+**Transaction:** The `org.hibernate.Transaction` interface provides methods for transaction management and handles the transaction works in the Hibernate framework.
+
+
+**Query object:** The `org.hibernate.query.Query` interface used to manipulate the persistent  objects (creation, retrieving data ...)
+using SQL or HQL.
+
+> 👉Note: HQL or Hibernate query language is an object-oriented query language, similar to SQL, but instead of operating on tables and columns, HQL works with persistent objects and their properties.
+
+
+**Criteria object:** `org.hibernate.Criteria` interface is also used to manipulate the persistent object but by executing the object-oriented criteria queries,  meaning that this interface provides predefined methods to add criteria to a query.
+
+# Hibernate benefits
+
+* Hibernate eliminates all the boiler-plate code that comes with JDBC.
+* Hibernate cache helps us in getting more performance.
+* Hibernate provides a powerful query language (HQL).
+* Easy integration of Hibernate.
+* Hibernate support lazy initialization using proxy objects.
+
+# Conclusion 
+
+I know that there is a lot of to say and understand in Hibernate framework but I tried in this blog to give you just the most important points of this framework, I will try in the future blogs to focus more on details(implementations).<br />
+I hope you understand all the points that we have touched one, if you find this blog interesting don't hesitate to share it with your friends. 😃😃
+
+
 
 
 
