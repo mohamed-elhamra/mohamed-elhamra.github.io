@@ -34,6 +34,12 @@ So, from everything we've seen, we can define **Hibernate** as **Java-based ORM 
 
 # Hibernate architecture
 
+As you can see in the picture **Hibernate** holds several components. In this section I will try to clarify each component and his role:<br />
+
+**Configuration object:** `org.hibernate.cfg.Configuration` is a predefined class which holds configuration properties of **Hibernate**, it's created first when creating the Hibernate application, it has two components: 
+   * Database connection which provides the configuration for the connection.
+   * The class mapping setup which creates the connection between the java class and the database.
+
 
 
 
