@@ -39,6 +39,13 @@ As you can see in the picture **Hibernate** holds several components. In this se
 **Configuration object:** `org.hibernate.cfg.Configuration` is a predefined class which holds configuration properties of **Hibernate**, it's created first when creating the Hibernate application, it has two components: 
    * Database connection which provides the configuration for the connection.
    * The class mapping setup which creates the connection between the java class and the database.
+   
+**SessionFactory object:**  It is instantiated by the `Configuration` Object, it's a factory of Session and client of `ConnectionProvider`. It holds second-level cache (optional) of data.<br />
+The `org.hibernate.SessionFactory` interface provides factory methods to create objects of Session.
+
+> 👉 Note: We can have one SessionFactory per database, so if we want to work with multiple databases, we need multiple SessionFactory and for each SessionFactory a configuration file.
+
+**Session object:** It is considered as an interface between the data stored in the database and the application. It is a short-lived object that wraps the **JDBC connection** also it's a factory of `Transaction`, `Query`, and `Criteria` as well as the `org.hibernate.Session` interface provides methods to insert, update, and delete the objects. It holds the first-level cache (mandatory) of data.
 
 
 
