@@ -52,7 +52,7 @@ The `org.hibernate.SessionFactory` interface provides factory methods to create 
 **Session object:** It is considered as an interface between the data stored in the database and the application. It is a short-lived object that wraps the **JDBC connection** also it's a factory of `Transaction`, `Query`, and `Criteria` as well as the `org.hibernate.Session` interface provides methods to insert, update, and delete the objects. It holds the first-level cache (mandatory) of data.
 
 
-<img src="/assets/img/sample/jdbc.PNG" alt="drawing" width="600" height="150"/>
+<img src="/assets/img/sample/jdbc.PNG" alt="drawing" width="685" height="150"/>
 
 
 **Transaction:** The `org.hibernate.Transaction` interface provides methods for transaction management and handles the transaction works in the Hibernate framework.
