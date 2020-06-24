@@ -44,31 +44,31 @@ As you can see in the picture **Hibernate** holds several components. In this se
    
 
 
-**SessionFactory object:**  It is instantiated by the `Configuration` Object, it's a factory of Session and client of `ConnectionProvider`. It holds second-level cache (optional) of data.<br />
+<br />**SessionFactory object:**  It is instantiated by the `Configuration` Object, it's a factory of Session and client of `ConnectionProvider`. It holds second-level cache (optional) of data.<br />
 The `org.hibernate.SessionFactory` interface provides factory methods to create objects of Session.
 
 > 👉 Note: We can have one `SessionFactory` per database, so if we want to work with multiple databases, we need multiple `SessionFactory` and for each SessionFactory a configuration file.
 
 
-**Session object:** It is considered as an interface between the data stored in the database and the application. It is a short-lived object that wraps the **JDBC connection** also it's a factory of `Transaction`, `Query`, and `Criteria` as well as the `org.hibernate.Session` interface provides methods to insert, update, and delete the objects. It holds the first-level cache (mandatory) of data.
+<br />**Session object:** It is considered as an interface between the data stored in the database and the application. It is a short-lived object that wraps the **JDBC connection** also it's a factory of `Transaction`, `Query`, and `Criteria` as well as the `org.hibernate.Session` interface provides methods to insert, update, and delete the objects. It holds the first-level cache (mandatory) of data.
 
 
 <img src="/assets/img/sample/jdbc.PNG" alt="drawing" width="685" height="150"/>
 
 
 
-**Transaction:** The `org.hibernate.Transaction` interface provides methods for transaction management and handles the transaction works in the Hibernate framework.
+<br />**Transaction:** The `org.hibernate.Transaction` interface provides methods for transaction management and handles the transaction works in the Hibernate framework.
 
 
 
-**Query object:** The `org.hibernate.query.Query` interface used to manipulate the persistent  objects (creation, retrieving data ...)
+<br />**Query object:** The `org.hibernate.query.Query` interface used to manipulate the persistent  objects (creation, retrieving data ...)
 using SQL or HQL.
 
 > 👉Note: HQL or Hibernate query language is an object-oriented query language, similar to SQL, but instead of operating on tables and columns, HQL works with persistent objects and their properties.
 
 
 
-**Criteria object:** `org.hibernate.Criteria` interface is also used to manipulate the persistent object but by executing the object-oriented criteria queries,  meaning that this interface provides predefined methods to add criteria to a query.
+<br />**Criteria object:** `org.hibernate.Criteria` interface is also used to manipulate the persistent object but by executing the object-oriented criteria queries,  meaning that this interface provides predefined methods to add criteria to a query.
 
 # Hibernate benefits
 
