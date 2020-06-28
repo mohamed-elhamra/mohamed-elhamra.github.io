@@ -12,23 +12,23 @@ tags: [hibernate architecture]
 
 Hello everyone!! 😃😃 <br /> 
 In this blog, I will talk about one of the most popular ORM frameworks in the Java ecosystem, which is Hibernate, but I will mainly focus on the architecture of this framework, the core components, and their functionalities.<br /> 
-So let's started.<br />
+So let's get started.<br />
 
 > 💡 ORM or object-relational mapping is the programming technique to map application domain model objects to the relational database tables.
 
 # What is JPA?
 
-After talking about Hibernate, we need first to understand the **JPA**.<br />
+Before talking about Hibernate, we need first to understand the **JPA**.<br />
 **JPA** or **Java Persistence API** is a standard for mapping Java objects to relational databases, which means that each object is represented as a table in the database, in other words, the Java objects can outlive outside the Java application and the **JPA** specification lets you define which objects should be persisted, and how those objects should be persisted in your Java applications, as well as via the **JPA** the developer can map, store, update, and retrieve data from relational databases to Java objects and vice versa.<br />
 
 > 💡 **JPA** specifications are defined with annotations in `javax.presistence package`.
 
 Whereas we have some problems here because the **JPA** is just a specification, meaning there is no implementation. You can annotate your classes as much as you would like with **JPA annotations**, however, without implementation, nothing will happen.<br />
-We can think that **JPA** is an interface but in order to work with, we need an implementation.
+We can think that **JPA** is an interface but in order to work with it, we need an implementation.
 
 # JPA implementations (Hibernate)
 
-As you can see, in the section above we found out a problem which is the implementation of **JPA**, but don't worry **JPA** has many implementations the most of them is **Hibernate framework** in there are others like **EclipseLink** and **Apache OpenJPA**.<br />
+As you can see, in the section above we found out a problem which is the implementation of **JPA**, but don’t worry **JPA** has many implementations such as **EclipseLink** ,**Apache OpenJPA** and **Hibernate framework** which is the most popular.<br />
 
 So, from everything we've seen, we can define **Hibernate** as **Java-based ORM tool** that provides a framework for mapping application domain objects to the relational database tables and vice versa, moreover by Hibernate we can manipulate data from relational databases to Java objects without working with the **SQL** because Hibernate contains predefined methods for creating, updating, deleting, inserting objects from and to database tables.
 
@@ -38,7 +38,7 @@ So, from everything we've seen, we can define **Hibernate** as **Java-based ORM 
 
 <img src="/assets/img/sample/hibernate-architecture.PNG" alt="drawing" width="410" height="410"/>
 
-As you can see in the picture **Hibernate** holds several components. In this section I will try to clarify each component and his role:<br />
+As you can see in the picture **Hibernate** holds several components. In this section I will try to clarify each component and it's role:<br />
 
 **Configuration object:** `org.hibernate.cfg.Configuration` is a predefined class which holds configuration properties of **Hibernate**, it's created first when creating the Hibernate application, it has two components: 
    * Database connection which provides the configuration for the connection.
@@ -83,7 +83,7 @@ using SQL or HQL.
 # Conclusion 
 
 I know that there is a lot of to say and understand in Hibernate framework but I tried in this blog to give you just the most important points of this framework, I will try in the future blogs to focus more on details(implementations).<br />
-I hope you understand all the points that we have touched one, if you find this blog interesting don't hesitate to share it with your friends. 😃😃
+I hope you understand all the points that we have touched on, if you find this blog interesting don't hesitate to share it with your friends. 😃😃
 
 
 
