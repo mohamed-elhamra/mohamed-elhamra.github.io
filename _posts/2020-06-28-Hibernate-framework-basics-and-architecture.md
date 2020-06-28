@@ -1,7 +1,7 @@
 ---
 title: Hibernate framework basics and architecture
 author: Mohamed Elhamra
-date: 2020-06-28 14:00:00 +0800
+date: 2020-06-28 12:00:00 +0800
 categories: [Blogging, hibernate]
 tags: [hibernate architecture]
 ---
