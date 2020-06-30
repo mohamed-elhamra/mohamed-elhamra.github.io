@@ -6,7 +6,7 @@ categories: [Blogging, hibernate]
 tags: [hibernate architecture]
 ---
 
-<img src="/assets/img/sample/hibernate.PNG" alt="drawing" width="685" height="150"/>
+<img src="/assets/img/sample/hibernate.PNG" alt="drawing" width="700" height="200"/>
 
 # Introduction 
 
