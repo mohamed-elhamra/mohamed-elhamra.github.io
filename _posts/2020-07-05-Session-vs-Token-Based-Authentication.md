@@ -6,6 +6,7 @@ categories: [Blogging, security]
 tags: [authentication]
 ---
 
+<img src="/assets/img/sample/authentication.png" alt="drawing" width="700" height="300"/>
 
 # Introduction 
 
