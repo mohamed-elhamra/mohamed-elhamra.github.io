@@ -1,9 +1,9 @@
 ---
 title: Session vs Token Based Authentication
 author: Mohamed Elhamra
-date: 2020-06-05 12:00:00 +0800
+date: 2020-07-05 12:00:00 +0800
 categories: [Blogging, security]
-tags: [jwt session authentication]
+tags: [jwt session]
 ---
 
 <img src="/assets/img/sample/authentication.png" alt="drawing" width="700" height="300"/>
@@ -82,7 +82,7 @@ Let's see the workflow for the token-based authentication:
 * Server verifies the token & grants access.
 * When the user logs out, the token is cleared from client storage.
  
- # Summary
+# Summary
  
 For the current Web application, the **Token-based authentication** is more recommended, but you need to pay attention to make **JWT** take just the necessary information about the user and sensitive information should be omitted to prevent **XSS** security attacks.<br />
 
