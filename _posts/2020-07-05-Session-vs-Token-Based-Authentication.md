@@ -38,6 +38,60 @@ After the session creation, the server will store the session id on a cookie in 
 
 <img src="/assets/img/sample/server-session.PNG" alt="drawing" width="700" height="300"/>
 
+> **Cookies:**  are small files on a user's computer containing pairs of (key, data) values and can be accessed either by the web server or the client computer.
+                For more details, you can visit this link: [**Click Here**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+                
+
+This type of authentication is called **stateful** because sessions are stored on the server-side:
+ * memory (file system ...)
+ * cache (REDIS or Memcached ...)
+ * DB (Postgres, MongoDB ...)
+ 
+ Let's see the workflow for the session authentication:
+ 
+ <img src="/assets/img/sample/session.png" alt="drawing" width="600" height="300"/>
+ 
+ * User make a POST request to send his login and password.
+ * Server verifies the credentials from the database.
+ * Server stores session data in the memory, cache, or DB.
+ * Sever issues a cookie with a session ID.
+ * User sends the cookie along with each request.
+ * Server verifies the user identity using session id.
+ * When the user logs out the session will be destroyed and the server clears the cookie.
+ 
+ # Token-Based Authentication using JWT
+ 
+As you can see in the Session-based authentication, when the user is authenticated the server creates a session for this user, now instead of creating the session id and information for a user, the server creates a token **JWT** which is usually stored in the local storage of the user and whenever the user sends a request he sends also this token in the header of the request. The server would then validate the **JWT** with every request from the client and sends a response.<br />
+ 
+<img src="/assets/img/sample/auth-jwt.PNG" alt="drawing" width="500" height="300"/>
+ 
+**JSON web token** or **JWT** is a token by which the server and the client can securely exchange data, this token consists of three parts **header**, **payload**, and **signature** for more details about the creation  of this token you can check this link: [**jwt.io**](https://jwt.io/introduction/) <br />
+
+This type of authentication is called **stateles**s because the server doesn’t store the user token, the server needs to maintain no state everything is stored on the client-side.<br />
+
+Let's see the workflow for the token-based authentication:
+
+<img src="/assets/img/sample/jwt.png" alt="drawing" width="600" height="400"/>
+
+* User make a POST request to send his login and password.
+* Server verifies the credentials from the database.
+* Sever generates a temporary token and embeds user data into it.
+* Server responds with the token (in response body or header).
+* User stores the token in client storage.
+* User sends the token along with each request.
+* Server verifies the token & grants access.
+* When the user logs out, the token is cleared from client storage.
+ 
+ # Summary
+ 
+For the current Web application, the **Token-based authentication** is more recommended, but you need to pay attention to make **JWT** take just the necessary information about the user and sensitive information should be omitted to prevent **XSS** security attacks.<br />
+
+And you need to keep in your mind that the authentication process can be **stateful using i.e Cookies-Session Duo**, or **stateless i.e using JWT**.<br />
+
+That was all for this blog !! 😀😀
+
+ 
+
 
 
 
