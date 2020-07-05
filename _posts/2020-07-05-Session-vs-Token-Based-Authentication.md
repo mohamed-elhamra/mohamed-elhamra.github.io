@@ -59,7 +59,7 @@ This type of authentication is called **stateful** because sessions are stored o
  * Server verifies the user identity using session id.
  * When the user logs out the session will be destroyed and the server clears the cookie.
  
- # Token-Based Authentication using JWT
+# Token-Based Authentication using JWT
  
 As you can see in the Session-based authentication, when the user is authenticated the server creates a session for this user, now instead of creating the session id and information for a user, the server creates a token **JWT** which is usually stored in the local storage of the user and whenever the user sends a request he sends also this token in the header of the request. The server would then validate the **JWT** with every request from the client and sends a response.<br />
  
