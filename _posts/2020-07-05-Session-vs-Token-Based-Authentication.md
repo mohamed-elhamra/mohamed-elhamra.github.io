@@ -12,15 +12,15 @@ tags: [jwt session]
 
 --------------------------------------
 
-As most of us know the  **HTTP** (HyperText Transfer Protocol) is a **stateless protocol**, meaning that there is no link between two requests being successively carried out on the same connection. Nevertheless, there is some situation when we need to remember the request sender as shown the following example :<br />
+As most of us know the  **HTTP** (HyperText Transfer Protocol) is a **stateless protocol**, meaning that there is no link between two requests being successively carried out on the same connection. Nevertheless, in some situation we need to remember the request sender as shown the following example :<br />
 
-Imagine we have an e-commerce website and a user adds a product to his shopping cart after he navigates to another page, suddenly the product disappear from the shopping cart.<br /> 
+Imagine we have an e-commerce website and a user adds a product to his shopping cart and after he navigates to another page, the product disappears from the shopping cart.<br /> 
 
-So in order to solve this problem, we need to make the application remembering the user identity by implementing **JWT token** or **Session**.
+So in order to solve this problem, we need to make the application remember the user identity by implementing **JWT token** or **Session**.
 
 # Authentication
 
-Before talking about **Sessions** or **JWT** we need first to define the authentification which is a process of identifying the user identity in a web application, in other words, check if the user exists in the database then let him access to resources, if not show an error message.<br />
+Before talking about **Sessions** or **JWT** we need first to define the authentification which is a process of identifying the user identity in a web application, in other words, check if the user exists in the database then let him access the resources, if not show an error message.<br />
 
 It answers the question: **Who are you?** 
 
@@ -67,7 +67,7 @@ As you can see in the Session-based authentication, when the user is authenticat
  
 **JSON web token** or **JWT** is a token by which the server and the client can securely exchange data, this token consists of three parts **header**, **payload**, and **signature** for more details about the creation  of this token you can check this link: [**jwt.io**](https://jwt.io/introduction/) <br />
 
-This type of authentication is called **stateles**s because the server doesn’t store the user token, the server needs to maintain no state everything is stored on the client-side.<br />
+This type of authentication is called **stateless** because the server doesn’t store the user token, the server needs to maintain no state, everything is stored on the client-side.<br />
 
 Let's see the workflow for the token-based authentication:
 
@@ -84,7 +84,7 @@ Let's see the workflow for the token-based authentication:
  
 # Summary
  
-For the current Web application, the **Token-based authentication** is more recommended, but you need to pay attention to make **JWT** take just the necessary information about the user and sensitive information should be omitted to prevent **XSS** security attacks.<br />
+For the current Web application, the **Token-based authentication** is more recommended, but you need to pay attention to make **JWT** take just the necessary information about the user and sensitive information should be omitted to prevent **XSS** (cross-site scripting) security attacks.<br />
 
 And you need to keep in your mind that the authentication process can be **stateful using i.e Cookies-Session Duo**, or **stateless i.e using JWT**.<br />
 
